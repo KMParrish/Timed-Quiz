@@ -5,7 +5,7 @@ var questions = [
         answerB: "Other arrays",
         answerC: "Objects",
         answerD: "All of the above"
-        correct: "answerD"
+        
     },
     {
         prompt: "Which of the following is the proper way to declare a class in javascript?",
@@ -13,7 +13,7 @@ var questions = [
         answerB: "apple.class",
         answerC: "appleClass",
         answerD: "class Apple"
-        correct: answerD
+        
     },
     {
         prompt: "",
