@@ -4,8 +4,15 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
 
 .quiz-container {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 20%);
     padding: 5px;
     height: 100vh;
     display: flex;
@@ -35,6 +42,8 @@ justify-content: center;
 }
 .header {
     text-align: center;
+    color: white;
+    font-size: 30px;
 }
 .header p {
     padding: 20px;
@@ -90,3 +99,30 @@ label {
 .hide {
     display: none;
 }
+.quiz-container.correct {
+    --hue: var(--hue-correct);
+}
+  
+.quiz-container.wrong {
+    --hue: var(--hue-wrong);
+}
+.btn.wrong {
+ --hue: var(--hue-wrong);
+}
+.btn.correct {
+    --hue: var(--hue-correct);
+  }
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  .question {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
