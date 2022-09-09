@@ -12,8 +12,8 @@
     
     <div class="quiz-container">
         <div class="top">
-            <button class="highscores-btn">View high scores</button>
-            <p>Time</p>
+            <button class="highscores-btn" id="highscores-btn">View high scores</button>
+            <p id="timer"></p>
         </div>
         <div class="middle">
             <header id="header" class="header">
@@ -36,16 +36,16 @@
                 </section>
                 <section id="end" class="end hide">
                     <h2 id="finish">Quiz Over</h2>
-                    <p>Your score: 0</p>
+                    <p id="score">Your score: 0</p>
                     <div id="high-score-entry" class="high-score-entry">
                         <label class="Name">Enter Your Initials:</label>
-                        <input type="text" placeholder="Your Initials">
-                        <button class="submit-btn">Submit</button>
+                        <input type="text" id="initials" placeholder="Your Initials">
+                        <button class="submit-btn" id="submit-btn">Submit</button>
                     </div>
                 </section>
                 <section id="highscores-screen" class="highscores-screen hide">
                     <h2 id="highscores-title">Highscores:</h2>
-                    <ol>
+                    <ol id="scores">
                     </ol>
                     <button id="back-to-quiz">Back to Quiz</button>
                     <button id="clear-scores-btn" class="red-nav-button">Clear scores</button>

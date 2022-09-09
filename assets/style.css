@@ -23,6 +23,11 @@
 .highscores{
     color: purple;
 }
+#highscores-title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 .top{
     font-size: 20px;
 }
@@ -84,8 +89,12 @@ label {
     text-align: right;
     font-weight: 900;
 }
+#clear-scores-btn {
+    margin-top: 100px;
+}
 #back-to-quiz {
     float: right;
+    margin-top: 100px;
 }
 .submit-btn {
     float: right;
@@ -125,4 +134,40 @@ label {
     color: white;
     text-align: center;
     font-size: 30px;
+  }
+    h2 {
+    font-size: 25px;
+    color: aquamarine;
+  }
+  #score {
+    color: aquamarine;
+    font-size: 15px;
+    padding-bottom: 100px;
+  }
+  #finish {
+    padding-bottom: 25px;
+  }
+  .Name {
+    color: aquamarine;
+  }
+  label {
+    font-size: 25px;
+  }
+  #timer {
+    color: aquamarine;
+    font-size: 30px;
+    padding-right: 30px;
+  }
+  #scores {
+    color:aquamarine;
+    text-align: center;
+    font-size: 25px;
+  }
+  li {
+    width: fit-content;
+    margin: auto;
+  }
+  li::marker {
+    margin-left: 500px;
+    
   }
