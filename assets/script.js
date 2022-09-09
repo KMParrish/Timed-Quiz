@@ -47,7 +47,7 @@ function handleTimeout() {
 function startTimer() {
     seconds = 60
     interval = window.setInterval(() => {
-        if (seconds === 0) {
+        if (seconds <= 0) {
             handleTimeout()
         }
         else {
