@@ -99,6 +99,9 @@ function selectAnswer(e) {
     if (correct) {
         counter = counter + 1
     }
+    else {
+        seconds = seconds - 5
+    }
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
